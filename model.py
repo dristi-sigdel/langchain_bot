@@ -21,7 +21,7 @@ vector_store = FAISS.from_documents(text_chunks, embedding = embeddings)
 print(type(vector_store))
 
 repo_id = "mistralai/Mistral-7B-Instruct-v0.1"
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = "insert_your_token"
 
 llm = HuggingFaceHub(repo_id = repo_id, model_kwargs = {"temperature": 0.5, "max_length": 1024})
 
